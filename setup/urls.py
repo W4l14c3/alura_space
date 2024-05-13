@@ -1,8 +1,7 @@
 from django.contrib import admin
-from django.urls import path
-from galeria.views import index # Função index importada de views
+from django.urls import path,include
 
 urlpatterns = [ #Urls padroes.
     path('admin/', admin.site.urls),
-    path('',  index), #A função index será executada quando o endereco principal for requisitado
+    path('',  include('galeria.urls')), #A urls.py da galeria sera chamada quando a requisição for a pagina principal e vai executar seu conteudo.
 ]
