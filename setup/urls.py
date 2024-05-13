@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 from galeria.views import index # Função index importada de views
 
 urlpatterns = [ #Urls padroes.
