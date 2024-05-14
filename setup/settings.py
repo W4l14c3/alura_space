@@ -54,11 +54,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'setup.urls'
-
+#Aqui fica toda a configuração visual das aplicações
+#DIRS se refere ao local dos templates.
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
